@@ -1,0 +1,73 @@
+.allContainer {
+  display: flex;
+  flex-direction: column;
+  background: #dfe4ea; 
+  border-radius: 6px;
+  padding: 10px;
+  height: 300px;
+
+  .inputContainer{
+    display: flex;
+    margin-bottom: 8px;
+    min-height: 36px;
+  
+    input {
+      padding-left: 8px;
+      min-width: 80%;
+      border: none;
+    }
+  
+    button {
+      min-width: 20%;
+      font-size: 16px;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+  
+    & > * {
+      box-sizing: border-box;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .tasksContainer {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    flex: 1;
+    font-weight: 500;
+    font-size: 20px;
+  
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 8px;
+      box-sizing: border-box;
+      padding: 12px;
+    }
+  
+    .task {
+      background-color: #5352ed;
+  
+      svg {
+        cursor: pointer;
+        min-width: 10%;
+      }
+    }
+  
+    .deletedTask {
+      background: #cbd4df;
+      text-decoration: line-through;
+      color: #a4b0be;
+      user-select: none;
+    }
+  }
+}

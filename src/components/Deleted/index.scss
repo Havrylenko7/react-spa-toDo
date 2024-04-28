@@ -1,0 +1,29 @@
+.deletedContainer {
+  display: flex;
+  flex-direction: column;
+  background: #dfe4ea; 
+  border-radius: 6px;
+  padding: 10px;
+  height: 300px;
+  font-weight: 500;
+  font-size: 22px;
+
+  .tasksContainer {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    .deletedTask {
+      background: #cbd4df;
+      text-decoration: line-through;
+      color: #a4b0be;
+      user-select: none;
+      width: 100%;
+      border-radius: 8px;
+      box-sizing: border-box;
+      padding: 12px;
+    }
+  }
+}
